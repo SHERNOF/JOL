@@ -135,6 +135,27 @@ html {
   }
 }
 
+@media (max-width: 510px) {
+  .navbar .brand-title a img {
+    width: 6rem;
+    height: 4rem;
+  }
+  .navbar .toggle-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 6rem;
+    top: 3.5rem;
+  }
+  .navbar .navbar-links ul li {
+    text-align: right;
+  }
+  .navbar .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .fp {
   background: linear-gradient(170deg, #7F7FD5, #86A8E7, #91EAE4);
   height: 100vh;
@@ -162,7 +183,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: -1.5%;
+  margin-bottom: -2%;
   cursor: pointer;
 }
 
@@ -335,6 +356,9 @@ html {
 }
 
 @media (max-width: 768px) {
+  .fp .scroll-down {
+    margin-bottom: -6%;
+  }
   .fp main .message {
     width: 80%;
   }
@@ -371,24 +395,45 @@ html {
 }
 
 @media (max-width: 510px) {
-  header main .message {
+  .fp main {
+    margin: 2.5rem 0 0 0;
+  }
+  .fp main .message {
     width: 90%;
+    margin: 1rem 0 0 2rem;
   }
-  header main .message h1 {
-    font-size: 3.5rem;
+  .fp main .message h1 {
+    font-size: 3rem;
   }
-  header main .message p {
+  .fp main .message p {
     font-size: 1.5rem;
   }
-  header main .buttons {
+  .fp main .buttons {
     bottom: 2rem;
   }
-  header main .buttons .social-info {
-    font-size: .4rem;
-    color: red;
+  .fp main .buttons .social-info {
+    font-size: .9rem;
   }
-  header main .buttons .social-icons {
-    margin-right: 2rem;
+  .fp main .buttons .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+  }
+  .fp main .buttons .social-icons a {
+    margin-left: 1.2rem;
+    padding: 1.5rem 1.5rem;
+  }
+  .fp main .buttons .social-icons a i {
+    font-size: 1.2rem;
   }
 }
 
