@@ -765,6 +765,9 @@ html {
     grid-gap: .5rem;
     padding: 2rem 2rem;
   }
+  #about-details .container .details-left {
+    padding: 1rem .5rem;
+  }
   #about-details .container .details-left h3 {
     font-size: 1.8rem;
   }
@@ -791,11 +794,16 @@ html {
 }
 
 @media (max-width: 510px) {
+  #about-details .container {
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    grid-gap: .1rem;
+  }
   #about-details .container .details-title h3 {
     font-size: 2rem;
   }
   #about-details .container .details-left h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #about-details .container .details-left p {
     font-size: 1rem;
@@ -808,14 +816,18 @@ html {
     font-size: 1.5rem;
   }
   #about-details .container .details-right p {
-    font-size: 1rem;
+    font-size: .9rem;
   }
   #about-details .container .details-right img {
     width: 70%;
     height: 80%;
   }
   #about-details .container .details-right ul {
-    font-size: 1rem;
+    font-size: .9rem;
+    margin-left: 1rem;
+  }
+  #about-details #btn-about-b a {
+    font-size: .8rem;
   }
 }
 

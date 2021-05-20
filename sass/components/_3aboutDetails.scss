@@ -144,6 +144,7 @@
             }
 
             & .details-left {
+                padding: 1rem .5rem;
                 & h3 {
                     font-size: 1.8rem;
                 }
@@ -184,7 +185,9 @@
     #about-details {
 
         & .container {
-            
+            padding: 1rem 1rem;
+            border-radius: 5px;
+            grid-gap: .1rem;
             & .details-title {
                 
                 & h3 {
@@ -194,7 +197,7 @@
 
             & .details-left {
                 & h3 {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
                 & p {
                     font-size: 1rem;
@@ -211,7 +214,7 @@
                     font-size: 1.5rem;
                 }
                 & p {
-                    font-size: 1rem;
+                    font-size: .9rem;
                 }
     
                 & img {    
@@ -220,11 +223,22 @@
                 }
     
                 & ul {
-                    font-size: 1rem;
+                    font-size: .9rem;
+                    margin-left: 1rem;
                 }
             }
         }
 
-        
+        & #btn-about-b {
+           
+            & a {
+                // width: 3rem;
+                // height: 3rem;
+                // padding: .05em .05em;
+                font-size: .8rem;
+                
+                
+            }
+        }
     }
 }
