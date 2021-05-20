@@ -54,6 +54,8 @@
                 font-size: 5rem;
                 color: $pc;
                 margin-top: 1rem;
+                text-shadow: -2px -2px 3px $pc,
+                2px 2px 3px $bg;
             }
 
             & p {
