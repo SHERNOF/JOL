@@ -284,3 +284,42 @@
     }
 }
 
+@media (max-width: $phone){
+    #contact {
+        padding: 1rem 1rem;
+        
+
+        & .contact-title {
+
+        }
+
+        & .contact-left {
+            
+            & .left-content {
+
+                & .img-area{
+                    width: 70%;
+                    height: 50%;
+                }
+
+                & .contact-content{
+
+                    & .prop {
+                        
+                        
+                        color: red;
+                        & h2 {
+                            font-size: 1.2rem;    
+                            margin: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .contact-right {
+            grid-area: right;
+        }
+    }
+}
+
