@@ -136,6 +136,9 @@ html {
 }
 
 @media (max-width: 510px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
   .navbar .brand-title a img {
     width: 6rem;
     height: 4rem;
@@ -143,16 +146,7 @@ html {
   .navbar .toggle-button {
     width: 1.5rem;
     height: 1.5rem;
-    right: 6rem;
-    top: 3.5rem;
-  }
-  .navbar .navbar-links ul li {
-    text-align: right;
-  }
-  .navbar .navbar-links.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    right: 5rem;
   }
 }
 
@@ -395,18 +389,22 @@ html {
 }
 
 @media (max-width: 510px) {
+  .fp .scroll-down {
+    display: none;
+  }
   .fp main {
     margin: 2.5rem 0 0 0;
+    padding: 1rem;
   }
   .fp main .message {
-    width: 90%;
-    margin: 1rem 0 0 2rem;
+    width: 95%;
+    margin: 2rem 0;
   }
   .fp main .message h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .fp main .message p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .fp main .buttons {
     bottom: 2rem;
@@ -415,18 +413,7 @@ html {
     font-size: .9rem;
   }
   .fp main .buttons .social-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
+    padding: .2rem;
   }
   .fp main .buttons .social-icons a {
     margin-left: 1.2rem;

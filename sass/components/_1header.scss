@@ -228,20 +228,27 @@
 
 @media (max-width: $phone){
     .fp {
+
+        & .scroll-down {
+            display: none;
+        }
         
         & main {
             margin: 2.5rem 0 0 0;
+            padding: 1rem;
+
             & .message {
     
-                width: 90%;
-                margin: 1rem 0 0 2rem;
+                width: 95%;
+                margin: 2rem 0;
+                // padding: 1rem;
     
                 & h1 {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                 }
     
                 & p {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
             }
 
@@ -257,13 +264,8 @@
                 }
     
                 & .social-icons {
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    width: 50%;
-                    height: 100%;
-                    // border: $border;
-                    padding: 2rem;
+        
+                    padding: .2rem;
                     
                     & a {
                         margin-left: 1.2rem;

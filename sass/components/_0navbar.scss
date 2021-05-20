@@ -123,7 +123,8 @@
 
 @media (max-width: $phone){
     .navbar {
-
+        
+        padding: 2rem 4rem;
         & .brand-title{
             & a {
     
@@ -137,32 +138,8 @@
         & .toggle-button {
             width: 1.5rem;
             height: 1.5rem;
-            right: 6rem;
-            top: 3.5rem;
-        }
-
-        & .navbar-links {
-        
-         
-
-            & ul {
-        
-
-                & li {
-                    text-align: right;
-                    
-                   
-                    
-                    & a{
-                       
-                    }
-                }
-            }
-        }
-
-        & .navbar-links.active {
-            display: flex;
-           
+            right: 5rem;
+            // top: 3.5rem;
         }
     }
 }    
