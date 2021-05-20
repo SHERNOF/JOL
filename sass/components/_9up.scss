@@ -70,3 +70,10 @@
         }
     }
 }
+
+
+@media (max-width: $phone){
+    #circle {
+        display: none;
+    }
+}

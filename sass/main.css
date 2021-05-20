@@ -1396,4 +1396,10 @@ footer {
   font-size: 1.2rem;
   color: #354a5e;
 }
+
+@media (max-width: 510px) {
+  #circle {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
