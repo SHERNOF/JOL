@@ -1,0 +1,14 @@
+{
+  "name": "jol3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss sass/style.css"
+  },
+  "author": "shernof",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

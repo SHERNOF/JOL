@@ -1,0 +1,129 @@
+#aboutUs {
+    height: 50vh;
+    background: $bg;
+    padding: 8rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 1fr .2fr;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "title title"
+    "left right"
+    "button button"
+    ;
+    
+
+    & .about-title{
+        grid-area: title;
+    }
+
+    & #about-vision {
+        grid-area: left;
+    }
+
+    & #about-mission {
+        grid-area: right;
+    }
+
+    & .ab-button {
+        grid-area: button;
+    }
+
+    & #about-vision, #about-mission {
+        @include center;
+        @include bsneu;
+        color: $pc;
+
+        & h2 {
+            flex: 1;
+            text-align: center;
+            font-family: $font2;
+            font-size: 1.8rem;
+            border-right: 1px solid #e0e6eb;
+        }
+
+        & p {
+            flex: 3;
+            font-weight: bold;
+            font-family: $font2;
+            font-size: 1.8rem;
+            position: relative;
+            margin: 0 0  0 2rem;
+        }
+    }
+
+    & .ab-button {
+        margin-top: 1rem;
+    
+        & a {
+            text-decoration: none;
+            width: 5rem;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            font-family: $font2;
+            font-size: 1.2rem;
+            @include bsneu;
+            position: relative;
+            z-index: 50;
+            color: $pc;
+
+            &:hover::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                box-shadow: inset -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ceced1;
+                color: $pc;
+            }
+        }
+
+       
+    }
+}
+
+
+@media (max-width: $tablet){
+    #aboutUs {
+        padding: 8rem 10rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        & #about-vision, #about-mission {
+
+            & h2 {
+
+                font-size: 1.6rem;
+                border-right: 1px solid #e0e6eb;
+            }
+    
+            & p {
+                font-family: $font2;
+                font-size: 1.6rem;
+            }     
+        }      
+    }
+}
+
+@media (max-width: $phone){
+    #aboutUs {
+        padding: 8rem 5rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        & #about-vision, #about-mission {    
+            & h2 {
+
+                font-size: 1.3rem;
+                border-right: 1px solid #e0e6eb;
+            }
+    
+            & p {
+                font-family: $font2;
+                font-size: 1.3rem;
+            }     
+        }      
+    }
+}

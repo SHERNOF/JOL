@@ -1,0 +1,7 @@
+footer {
+    background: $bg;
+    height: 10vh;
+    @include center;
+    font-size: 1rem;
+    // @include bsneu;
+}

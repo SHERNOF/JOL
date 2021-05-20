@@ -1,0 +1,72 @@
+// #circle {
+//     @include center;
+    
+//     width: 100%;
+//     border: $border;
+//     height: 10vh;
+//     position: fixed;
+
+//     & .circle-content {
+//         position: relative;
+
+//         & a {
+            
+//             right: 1.5rem;
+//             bottom: 1rem;
+//             z-index: 5;
+            
+//             & i {
+//                 font-size: 1rem;
+//                 color: $pc;
+//                 border: 1px solid $pc;
+//                 width: 2rem;
+//                 height: 2rem;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 border-radius: 50%;
+                
+//             }
+//         }
+//     }
+// }
+
+
+#circle {
+
+    @include center;
+    height: 10vh;
+    // @include bsneu;
+    // border: $border;
+    border-radius: 0;
+    position: fixed;
+    bottom: .2vh;
+    width: 100%;
+    
+
+    & .circle-content {
+        @include center;
+        justify-content: flex-end;
+        padding: 1rem;
+        // border: $border;
+        width: 90%;
+        margin-top: .75rem;
+
+        & a {
+            right: 2%;
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 1px solid $pc;
+            border-radius: 50%;
+            @include center;
+            text-decoration: none;
+            
+            & i {
+                font-size: 1.2rem;
+                color: $pc;
+                
+
+            }
+        }
+    }
+}
