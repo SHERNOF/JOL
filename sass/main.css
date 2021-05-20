@@ -1313,11 +1313,8 @@ html {
     width: 70%;
     height: 50%;
   }
-  #contact .contact-left .left-content .contact-content .prop {
-    color: red;
-  }
   #contact .contact-left .left-content .contact-content .prop h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 2rem;
   }
   #contact .contact-right {
