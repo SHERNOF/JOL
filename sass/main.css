@@ -1302,6 +1302,7 @@ html {
   #contact .contact-title {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: title;
   }
   #contact .contact-left {
@@ -1414,6 +1415,339 @@ footer {
 @media (max-width: 510px) {
   #circle {
     display: none;
+  }
+}
+
+#inv {
+  background: linear-gradient(170deg, #7F7FD5, #86A8E7, #91EAE4);
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+}
+
+#inv #inv-content {
+  width: 90%;
+  height: 95%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: .1fr 1fr;
+      grid-template-rows: .1fr 1fr;
+      grid-template-areas: "title title" "player committee";
+}
+
+#inv #inv-content .inv-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 4rem;
+  color: #354a5e;
+  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+#inv #inv-content .player {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: player;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#inv #inv-content .player .player-content {
+  width: 90%;
+  height: 90%;
+}
+
+#inv #inv-content .committee {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: committee;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#inv #inv-content .committee .committee-content {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#inv #inv-content .committee .committee-content h4 {
+  font-size: 2rem;
+  position: relative;
+  bottom: 3rem;
+}
+
+#inv #inv-content .committee .committee-content h4::after {
+  content: "";
+  width: 20rem;
+  height: 2px;
+  background: linear-gradient(170deg, #91EAE4, #7F7FD5, #86A8E7);
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#inv #inv-content .committee .committee-content .committee-members {
+  width: 100%;
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  height: 300px;
+  margin: 0 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+#inv #inv-content .committee .committee-content .committee-members .sidebar {
+  width: 60px;
+  padding: 1rem 0;
+  background: #7F7FD5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#inv #inv-content .committee .committee-content .committee-members .sidebar i {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  color: white;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide .card:nth-child(6):last-child {
+  position: relative;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide .card:nth-child(6):last-child .pic {
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 10%;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide .card:nth-child(6):last-child .pic .pic-content {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide .card {
+  height: 300px;
+  padding: 3rem;
+  color: #354a5e;
+  line-height: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide p {
+  font-size: 1.2rem;
+  font-family: "Bellota Text", cursive;
+  line-height: 2rem;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide .profile img {
+  width: 5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide .profile h5 {
+  font-size: 1.4rem;
+  color: #354a5e;
+  margin-bottom: 1rem;
+}
+
+#inv #inv-content .committee .committee-content .committee-members #slide .profile p {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 510px) {
+  #inv {
+    height: auto;
+  }
+  #inv #inv-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: .1fr .7fr .7fr;
+        grid-template-rows: .1fr .7fr .7fr;
+        grid-template-areas: "title" "player" "committee";
+    grid-gap: 1rem;
+  }
+  #inv .inv-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  #inv .player {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: player;
+  }
+  #inv .committee {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: committee;
+  }
+  #inv .committee .committee-content .committee-members {
+    height: 300px;
+  }
+  #inv .committee .committee-content .committee-members #slide .card {
+    height: 300px;
+    padding: 3rem;
+    color: #354a5e;
+    line-height: 1rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+  }
+  #inv .committee .committee-content .committee-members #slide p {
+    font-size: .1rem;
+    line-height: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
