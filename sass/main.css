@@ -1297,6 +1297,7 @@ html {
     -ms-grid-rows: .2fr 1fr 1fr;
         grid-template-rows: .2fr 1fr 1fr;
         grid-template-areas: "title "   "left  " "right ";
+    grid-gap: 3rem 0;
   }
   #contact .contact-title {
     -ms-grid-row: 1;
