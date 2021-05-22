@@ -217,7 +217,7 @@
         & #inv-content {
         width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: .1fr .7fr .7fr;
+        grid-template-rows: .1fr 1fr 1fr;
         grid-template-areas: 
         "title"
         "player"
