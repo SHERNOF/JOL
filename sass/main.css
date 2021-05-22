@@ -1719,11 +1719,16 @@ footer {
         grid-template-areas: "title" "player" "committee";
     grid-gap: 1rem;
   }
+  #inv #inv-content {
+    border-radius: 0;
+  }
   #inv #inv-content .inv-title {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
-    margin-right: 2rem;
+  }
+  #inv #inv-content .inv-title h3 {
+    margin-left: 2.5rem;
   }
   #inv #inv-content .player {
     -ms-grid-row: 3;
@@ -1734,7 +1739,7 @@ footer {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: player;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   #inv #inv-content .committee .committee-content .committee-members {
     height: 300px;

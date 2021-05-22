@@ -227,10 +227,14 @@
         }
 
         #inv-content{
+            border-radius: 0;
 
             & .inv-title {
                 grid-area: title;
-                margin-right: 2rem;
+                
+                & h3 {
+                    margin-left: 2.5rem;
+                }
             }
 
             & .player {
@@ -239,7 +243,7 @@
 
             & .committee {
                 grid-area: player;
-                margin-top: 1rem;
+                margin-top: 2rem;
 
                 & .committee-content {
 
