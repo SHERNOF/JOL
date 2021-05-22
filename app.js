@@ -40,25 +40,25 @@ phone.addEventListener('click', (e) => {
     addtlInfo.innerHTML = '+61 425 806 041'
 })
 
-const slide = document.getElementById('slide')
-const up = document.getElementById('up')
-const down = document.getElementById('down')
+// const slide = document.getElementById('slide')
+// const up = document.getElementById('up')
+// const down = document.getElementById('down')
 
-let x = 0;
+// let x = 0;
 
-up.onclick = () => {
-    if (x > "-1500"){
-        x = x - 300;
-        slide.style.top = x + "px"
-    }
-}
+// up.onclick = () => {
+//     if (x > "-1500"){
+//         x = x - 300;
+//         slide.style.top = x + "px"
+//     }
+// }
 
-down.onclick = () => {
-    if (x < "0"){
-        x = x + 300;
-        slide.style.top = x + "px"
-    }
-}
+// down.onclick = () => {
+//     if (x < "0"){
+//         x = x + 300;
+//         slide.style.top = x + "px"
+//     }
+// }
 
 
 
