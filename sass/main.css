@@ -1694,11 +1694,13 @@ footer {
 
 @media (max-width: 510px) {
   #inv {
-    height: 100vh;
+    height: 105vh;
   }
   #inv #inv-content {
     border-radius: 0;
     height: 95%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   #inv #inv-content .inv-title {
     padding: 0 1.5rem;
@@ -1725,6 +1727,7 @@ footer {
     width: 100%;
     padding: 0 0;
     margin-bottom: 2rem;
+    display: none;
   }
   #inv #inv-content .main-content .committee {
     width: 100%;

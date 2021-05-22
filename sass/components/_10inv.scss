@@ -183,10 +183,11 @@
 @media (max-width: $phone){
 
     #inv {
-        height: 100vh;
+        height: 105vh;
         & #inv-content {
             border-radius: 0;
             height: 95%;
+            justify-content: space-around;
             
 
             & .inv-title{
@@ -207,6 +208,7 @@
                     width: 100%;
                     padding: 0 0;
                     margin-bottom: 2rem;
+                    display: none;
                 }
 
                 & .committee {
@@ -225,6 +227,7 @@
                         & .committee-members{
                             margin: 0 0 0 0;
                             width: 100%;
+                            // margin-top: 350px;
 
                             & #slide {
                                 width: 100%;
