@@ -1694,7 +1694,7 @@ footer {
 
 @media (max-width: 510px) {
   #inv {
-    height: 125vh;
+    height: 105vh;
   }
   #inv #inv-content {
     border-radius: 0;
