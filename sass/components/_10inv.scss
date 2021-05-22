@@ -207,7 +207,7 @@
 @media (max-width: $phone){
 
     #inv {
-        height: 60vh;
+        height: 100vh;
         width: 100%;
     
         & #inv-content {
@@ -225,7 +225,7 @@
 
         #inv-content{
             border-radius: 0;
-            height: 90%;
+            // height: 90%;
 
 
             & .inv-title {
@@ -288,8 +288,6 @@
                             }
 
                             & .card {
-                                height: 300px;
-                                padding: 3rem;
                                 color: $pc;
                                 box-sizing: border-box;
                                 position: relative;
