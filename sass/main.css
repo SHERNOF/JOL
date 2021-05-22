@@ -1708,7 +1708,7 @@ footer {
 
 @media (max-width: 510px) {
   #inv {
-    height: 120vh;
+    height: 60vh;
     width: 100%;
   }
   #inv #inv-content {
@@ -1741,9 +1741,6 @@ footer {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: committee;
-  }
-  #inv #inv-content .committee .committee-content .committee-members {
-    height: 300px;
   }
   #inv #inv-content .committee .committee-content .committee-members .sidebar {
     width: 30px;

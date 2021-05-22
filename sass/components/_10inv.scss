@@ -207,7 +207,7 @@
 @media (max-width: $phone){
 
     #inv {
-        height: 120vh;
+        height: 60vh;
         width: 100%;
     
         & #inv-content {
@@ -251,11 +251,14 @@
             & .committee {
                 grid-area: committee;
                 // margin-top: 2rem;
+                // border: $border;
+                // display:  none;
 
                 & .committee-content {
 
                     & .committee-members{
-                        height: 300px;
+                        // height: 300px;
+                        
 
                         & .sidebar {
                             width: 30px;
