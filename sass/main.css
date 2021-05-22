@@ -1698,7 +1698,6 @@ footer {
   }
   #inv #inv-content {
     border-radius: 0;
-    height: 95%;
   }
   #inv #inv-content .inv-title {
     padding: 0 1.5rem;
@@ -1706,15 +1705,6 @@ footer {
     margin-bottom: 1rem;
   }
   #inv #inv-content .main-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1727,10 +1717,9 @@ footer {
     margin-bottom: 2rem;
   }
   #inv #inv-content .main-content .committee {
+    border: 1px solid red;
     width: 100%;
     padding: 0 0;
-    z-index: 3;
-    height: 600px;
   }
   #inv #inv-content .main-content .committee .committee-content h4 {
     margin-bottom: 2rem;
@@ -1744,6 +1733,7 @@ footer {
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide .card {
     padding: 1rem;
+    border: 1px solid red;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide .card .profile {
     margin-bottom: 2rem;
