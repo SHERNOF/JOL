@@ -1722,7 +1722,6 @@ footer {
     border: 1px solid red;
   }
   #inv #inv-content .main-content .player {
-    border: 1px solid red;
     width: 100%;
     padding: 0 0;
     margin-bottom: 2rem;
@@ -1734,7 +1733,7 @@ footer {
     padding: 0 0;
   }
   #inv #inv-content .main-content .committee .committee-content h4 {
-    margin-bottom: 20rem;
+    margin-bottom: 300px;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members {
     margin: 0 0 0 0;

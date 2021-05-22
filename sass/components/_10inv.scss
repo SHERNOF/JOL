@@ -199,9 +199,11 @@
                 @include center;
                 flex-direction: column;
                 border: $border;
+                
+                
             
                 & .player {
-                    border: $border;
+                    // border: $border;
                     width: 100%;
                     padding: 0 0;
                     margin-bottom: 2rem;
@@ -217,7 +219,7 @@
                         
 
                         & h4 {
-                            margin-bottom: 20rem;
+                            margin-bottom: 300px;
                         }
 
                         & .committee-members{
