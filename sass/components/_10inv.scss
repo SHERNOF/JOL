@@ -187,7 +187,7 @@
         & #inv-content {
             border-radius: 0;
             height: 95%;
-            justify-content: space-around;
+            // justify-content: space-around;
             
 
             & .inv-title{
@@ -208,13 +208,13 @@
                     width: 100%;
                     padding: 0 0;
                     margin-bottom: 2rem;
-                    display: none;
                 }
 
                 & .committee {
                     // border: $border;
                     width: 100%;
                     padding: 0 0;
+                    display: none;
 
                     & .committee-content{
                         height: 40vh;

@@ -1699,8 +1699,6 @@ footer {
   #inv #inv-content {
     border-radius: 0;
     height: 95%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
   #inv #inv-content .inv-title {
     padding: 0 1.5rem;
@@ -1727,11 +1725,11 @@ footer {
     width: 100%;
     padding: 0 0;
     margin-bottom: 2rem;
-    display: none;
   }
   #inv #inv-content .main-content .committee {
     width: 100%;
     padding: 0 0;
+    display: none;
   }
   #inv #inv-content .main-content .committee .committee-content {
     height: 40vh;
