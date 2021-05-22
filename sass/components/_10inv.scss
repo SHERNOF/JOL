@@ -197,13 +197,12 @@
 
             & .main-content {
                 @include center;
-                flex-direction: column;
+                // flex-direction: column;
                 border: $border;
                 
                 
             
                 & .player {
-                    // border: $border;
                     width: 100%;
                     padding: 0 0;
                     margin-bottom: 2rem;
@@ -214,6 +213,7 @@
                     // border: $border;
                     width: 100%;
                     padding: 0 0;
+                    z-index: 3;
 
                     & .committee-content{
                         
@@ -224,11 +224,7 @@
 
                         & .committee-members{
                             margin: 0 0 0 0;
-                            width: 60%;
-                            margin-top: 2rem;
-                            // padding: 300px 0;
-                            overflow: auto;
-                            
+                            width: 100%;
 
                             & #slide {
                                 width: 100%;

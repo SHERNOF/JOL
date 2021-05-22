@@ -1715,10 +1715,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     border: 1px solid red;
   }
   #inv #inv-content .main-content .player {
@@ -1730,15 +1726,14 @@ footer {
   #inv #inv-content .main-content .committee {
     width: 100%;
     padding: 0 0;
+    z-index: 3;
   }
   #inv #inv-content .main-content .committee .committee-content h4 {
     margin-bottom: 2rem;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members {
     margin: 0 0 0 0;
-    width: 60%;
-    margin-top: 2rem;
-    overflow: auto;
+    width: 100%;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide {
     width: 100%;
