@@ -1725,7 +1725,7 @@ footer {
     margin-bottom: 2rem;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members {
-    margin: 0 0 0 0;
+    margin: 0;
     width: 100%;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide {
@@ -1737,6 +1737,9 @@ footer {
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide .card .profile {
     margin-bottom: 2rem;
+  }
+  #inv #inv-content .main-content .committee .committee-content .committee-members #slide .card .profile div h5 {
+    color: red;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide .card p {
     margin-top: -1rem;

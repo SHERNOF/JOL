@@ -220,7 +220,7 @@
                         }
 
                         & .committee-members{
-                            margin: 0 0 0 0;
+                            margin: 0;
                             width: 100%;
 
                             & #slide {
@@ -237,11 +237,13 @@
         
                                         & img {
                                         }
-        
-                                        & h5 {
-                                        }
-        
-                                        & p {
+                                        & div {
+                                            & h5 {
+                                                color: red;
+                                            }
+            
+                                            & p {
+                                            }
                                         }
                                     }
     
