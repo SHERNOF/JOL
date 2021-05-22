@@ -1730,6 +1730,7 @@ footer {
     width: 100%;
     padding: 0 0;
     z-index: 3;
+    height: 600px;
   }
   #inv #inv-content .main-content .committee .committee-content h4 {
     margin-bottom: 2rem;
