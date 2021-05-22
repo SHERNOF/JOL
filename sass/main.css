@@ -1715,8 +1715,6 @@ footer {
     width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: .1fr 1fr 1fr;
-        grid-template-rows: .1fr 1fr 1fr;
         grid-template-areas: "title" "player" "committee";
     grid-gap: 1rem;
   }
