@@ -1722,6 +1722,7 @@ footer {
   }
   #inv #inv-content {
     border-radius: 0;
+    height: 90%;
   }
   #inv #inv-content .inv-title {
     -ms-grid-row: 1;
@@ -1735,12 +1736,12 @@ footer {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: player;
+    height: auto;
   }
   #inv #inv-content .committee {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: committee;
-    margin-top: 2rem;
   }
   #inv #inv-content .committee .committee-content .committee-members {
     height: 300px;

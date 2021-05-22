@@ -229,9 +229,12 @@
 
         #inv-content{
             border-radius: 0;
+            height: 90%;
+
 
             & .inv-title {
                 grid-area: title;
+                // border: $border;
                 
                 & h3 {
                     margin-left: 2.5rem;
@@ -240,11 +243,18 @@
 
             & .player {
                 grid-area: player;
+                // border: $border;
+                height: auto;  
+                
+                
+                & .player-content{
+
+                }
             }
 
             & .committee {
                 grid-area: committee;
-                margin-top: 2rem;
+                // margin-top: 2rem;
 
                 & .committee-content {
 
