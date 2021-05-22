@@ -1703,6 +1703,7 @@ footer {
   #inv #inv-content .inv-title {
     padding: 0 1.5rem;
     border: 1px solid red;
+    margin-bottom: 1rem;
   }
   #inv #inv-content .main-content {
     display: -webkit-box;
@@ -1731,15 +1732,14 @@ footer {
     border: 1px solid red;
     width: 100%;
     padding: 0 0;
-    height: 90vh;
   }
   #inv #inv-content .main-content .committee .committee-content h4 {
-    margin-bottom: 2rem;
-    display: none;
+    margin-bottom: 20rem;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members {
     margin: 0 0 0 0;
     width: 100%;
+    margin-top: 2rem;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide {
     width: 100%;
