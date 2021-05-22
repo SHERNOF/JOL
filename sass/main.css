@@ -1725,11 +1725,11 @@ footer {
     width: 100%;
     padding: 0 0;
     margin-bottom: 2rem;
+    z-index: 3;
   }
   #inv #inv-content .main-content .committee {
     width: 100%;
     padding: 0 0;
-    display: none;
   }
   #inv #inv-content .main-content .committee .committee-content {
     height: 40vh;
