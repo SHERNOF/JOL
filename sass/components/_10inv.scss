@@ -183,18 +183,17 @@
 @media (max-width: $phone){
 
     #inv {
-        height: 105vh;
+        height: 100vh;
+
         & #inv-content {
             border-radius: 0;
             height: 95%;
-            // justify-content: space-around;
-            
-
+        
             & .inv-title{
                 // height: 10%;
                 padding: 0 1.5rem;
-                // border: $border;
-                margin-bottom: 1rem;
+                border: $border;
+                // margin-bottom: 1rem;
             }
 
             & .main-content {
@@ -203,7 +202,6 @@
                 border: $border;
             
                 & .player {
-                    // height: 90%;
                     border: $border;
                     width: 100%;
                     padding: 0 0;
@@ -212,16 +210,18 @@
                 }
 
                 & .committee {
-                    // border: $border;
+                    border: $border;
                     width: 100%;
                     padding: 0 0;
                     // display: none;
+                    height: 90vh;
 
                     & .committee-content{
-                        height: 40vh;
+                        
 
                         & h4 {
                             margin-bottom: 2rem;
+                            display: none;
 
                         }
 

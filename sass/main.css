@@ -1694,7 +1694,7 @@ footer {
 
 @media (max-width: 510px) {
   #inv {
-    height: 105vh;
+    height: 100vh;
   }
   #inv #inv-content {
     border-radius: 0;
@@ -1702,7 +1702,7 @@ footer {
   }
   #inv #inv-content .inv-title {
     padding: 0 1.5rem;
-    margin-bottom: 1rem;
+    border: 1px solid red;
   }
   #inv #inv-content .main-content {
     display: -webkit-box;
@@ -1728,14 +1728,14 @@ footer {
     z-index: 3;
   }
   #inv #inv-content .main-content .committee {
+    border: 1px solid red;
     width: 100%;
     padding: 0 0;
-  }
-  #inv #inv-content .main-content .committee .committee-content {
-    height: 40vh;
+    height: 90vh;
   }
   #inv #inv-content .main-content .committee .committee-content h4 {
     margin-bottom: 2rem;
+    display: none;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members {
     margin: 0 0 0 0;
