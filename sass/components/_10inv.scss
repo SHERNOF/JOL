@@ -197,7 +197,7 @@
 
             & .main-content {
                 @include center;
-                // flex-direction: column;
+                flex-direction: column;
                 border: $border;
                 
                 
@@ -206,7 +206,7 @@
                     width: 100%;
                     padding: 0 0;
                     margin-bottom: 2rem;
-                    z-index: 3;
+                    // z-index: 3;
                 }
 
                 & .committee {
