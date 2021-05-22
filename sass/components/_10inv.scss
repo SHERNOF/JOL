@@ -230,14 +230,16 @@
 
             & .inv-title {
                 grid-area: title;
+                margin-right: 2rem;
             }
 
             & .player {
-                grid-area: player;
+                grid-area: committee;
             }
 
             & .committee {
-                grid-area: committee;
+                grid-area: player;
+                margin-top: 1rem;
 
                 & .committee-content {
 
