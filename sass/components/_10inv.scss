@@ -211,7 +211,8 @@
 @media (max-width: $phone){
 
     #inv {
-        height: auto;
+        height: 120vh;
+        width: 100%;
     
         & #inv-content {
         width: 100%;
@@ -238,11 +239,11 @@
             }
 
             & .player {
-                grid-area: committee;
+                grid-area: player;
             }
 
             & .committee {
-                grid-area: player;
+                grid-area: committee;
                 margin-top: 2rem;
 
                 & .committee-content {
@@ -295,8 +296,6 @@
                                         font-size: 1.3rem;
                                     }
                                 } 
-
-                                
                             }
                             
 
@@ -305,16 +304,11 @@
                                 line-height: 1.5rem;
                                 margin-top: -1.2rem;
                             }
-                        }
-    
-                               
+                        }              
+                    }
                 }
             }
         }
-
-        }
-
-            
     }
 }
 
