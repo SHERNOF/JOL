@@ -1738,6 +1738,7 @@ footer {
     margin: 0 0 0 0;
     width: 60%;
     margin-top: 2rem;
+    overflow: auto;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide {
     width: 100%;
