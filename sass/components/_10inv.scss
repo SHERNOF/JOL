@@ -183,41 +183,39 @@
 @media (max-width: $phone){
 
     #inv {
-        height: 105vh;
+        height: 100vh;
         & #inv-content {
             border-radius: 0;
             height: 95%;
             
 
             & .inv-title{
-                height: 10%;
-                padding: 1rem 1.5rem;
-                border: $border;
+                // height: 10%;
+                padding: 0 1.5rem;
+                // border: $border;
                 margin-bottom: 1rem;
             }
 
             & .main-content {
                 @include center;
                 flex-direction: column;
-                // padding: 0 1rem;
                 border: $border;
-                
-
+            
                 & .player {
                     // height: 90%;
                     border: $border;
                     width: 100%;
                     padding: 0 0;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
                 }
 
                 & .committee {
-                    // height: 90%;
-                    border: $border;
+                    // border: $border;
                     width: 100%;
                     padding: 0 0;
 
                     & .committee-content{
+                        height: 40vh;
 
                         & h4 {
                             margin-bottom: 2rem;
@@ -232,40 +230,37 @@
                                 width: 100%;
 
                                 & .card {
-                                    padding: 2rem;
+                                    padding: 1rem;
                                     
 
                                     & .profile{
                                         margin-bottom: 2rem;
         
                                         & img {
-                                            width: 5rem;
-                                            height: 5rem;
-                                            border-radius: 50%;
-                                            margin-right: 1rem;
                                         }
         
                                         & h5 {
-                                            font-size: 1.4rem;
-                                            color: $pc;
-                                            margin-bottom: 1rem;
                                         }
         
                                         & p {
-                                            font-size: 1.3rem;
                                         }
                                     }
     
                                     & p {
-                                        font-size: 1.2rem;
-                                        font-family: $font2;
-                                        line-height: 2rem;
+                                        margin-top: -1rem;
                                     }
                                 }
                             }
 
                             & .sidebar {
-
+                            width: 40px;    
+    
+                                & i {
+                                    width: 20px;
+                                    height: 20px;
+                                    padding: 2px;
+                                    font-size: .8rem;
+                                }
                             }
                         }
                     }
