@@ -1733,13 +1733,12 @@ footer {
     padding: 0 0;
   }
   #inv #inv-content .main-content .committee .committee-content h4 {
-    margin-bottom: 300px;
+    margin-bottom: 2rem;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members {
     margin: 0 0 0 0;
-    width: 100%;
+    width: 80%;
     margin-top: 2rem;
-    padding: 300px 0;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide {
     width: 100%;
