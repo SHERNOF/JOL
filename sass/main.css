@@ -1711,6 +1711,7 @@ footer {
     height: auto;
   }
   #inv #inv-content {
+    width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: .1fr .7fr .7fr;
@@ -1718,36 +1719,64 @@ footer {
         grid-template-areas: "title" "player" "committee";
     grid-gap: 1rem;
   }
-  #inv .inv-title {
+  #inv #inv-content .inv-title {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
   }
-  #inv .player {
+  #inv #inv-content .player {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: player;
   }
-  #inv .committee {
+  #inv #inv-content .committee {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: committee;
   }
-  #inv .committee .committee-content .committee-members {
+  #inv #inv-content .committee .committee-content .committee-members {
     height: 300px;
   }
-  #inv .committee .committee-content .committee-members #slide .card {
+  #inv #inv-content .committee .committee-content .committee-members .sidebar {
+    width: 30px;
+    padding: 1rem 0;
+  }
+  #inv #inv-content .committee .committee-content .committee-members .sidebar i {
+    width: 17px;
+    height: 17px;
+    padding: 3px;
+    border: 1px solid white;
+  }
+  #inv #inv-content .committee .committee-content .committee-members #slide .card:nth-child(6):last-child {
+    position: relative;
+  }
+  #inv #inv-content .committee .committee-content .committee-members #slide .card:nth-child(6):last-child .pic {
+    width: 85%;
+    height: 45%;
+    left: 10%;
+  }
+  #inv #inv-content .committee .committee-content .committee-members #slide .card:nth-child(6):last-child .pic .pic-content {
+    margin-bottom: 4rem;
+  }
+  #inv #inv-content .committee .committee-content .committee-members #slide .card {
     height: 300px;
     padding: 3rem;
     color: #354a5e;
-    line-height: 1rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative;
   }
-  #inv .committee .committee-content .committee-members #slide p {
-    font-size: .1rem;
-    line-height: 1rem;
+  #inv #inv-content .committee .committee-content .committee-members #slide .card .profile h5 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  #inv #inv-content .committee .committee-content .committee-members #slide .card .profile p {
+    font-size: 1.3rem;
+  }
+  #inv #inv-content .committee .committee-content .committee-members #slide .pastorMmessage {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: -1.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

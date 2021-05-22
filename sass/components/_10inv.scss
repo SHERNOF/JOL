@@ -214,6 +214,7 @@
         height: auto;
     
         & #inv-content {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: .1fr .7fr .7fr;
         grid-template-areas: 
@@ -224,6 +225,8 @@
 
         grid-gap: 1rem;
         }
+
+        #inv-content{
 
             & .inv-title {
                 grid-area: title;
@@ -241,25 +244,71 @@
                     & .committee-members{
                         height: 300px;
 
+                        & .sidebar {
+                            width: 30px;
+                            padding: 1rem 0;
+
+                            & i {
+                                width: 17px;
+                                height: 17px;
+                                padding: 3px;
+                                border: 1px solid white;
+                            }
+                        }    
                         & #slide {
+
+                            & .card:nth-child(6):last-child  {
+                                position: relative;
+                                
+                                & .pic {
+                                    width: 85%;
+                                    height: 45%;
+                                    left: 10%;
+    
+                                    & .pic-content {
+                                        margin-bottom: 4rem;
+                                    }
+                                }
+                            }
+
                             & .card {
                                 height: 300px;
                                 padding: 3rem;
                                 color: $pc;
-                                line-height: 1rem;
                                 box-sizing: border-box;
                                 position: relative;
-    
-                                }
-    
-                                & p {
-                                    font-size: .1rem;
-                                    line-height: 1rem;
-                                }
+
+                                & .profile {
+
+                                    & h5{
+                                        font-size: 1.1rem;
+                                        line-height: 1.5rem;
+                                    }
+
+                                    & p {
+                                        font-size: 1.3rem;
+                                    }
+                                } 
+
+                                
+                            }
+                            
+
+                            & .pastorMmessage {
+                                font-size: 1.2rem;
+                                line-height: 1.5rem;
+                                margin-top: -1.2rem;
+                            }
                         }
+    
+                               
                 }
             }
         }
+
+        }
+
+            
     }
 }
 
