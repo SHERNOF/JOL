@@ -1,0 +1,159 @@
+#invitation {
+    height: 80vh;
+    width: 100%;
+    @include center;
+    // border: $border;
+    background: $bg;
+    // padding: 1rem 10rem;
+
+    & .invitation-content {
+        height: 95%;
+        
+        // border: $border;
+        border-radius: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "services player"
+        ;
+        padding: 1rem 10rem;
+        grid-gap: 1rem;
+        
+
+
+        & .invitation-title {
+            grid-area: title;
+            // border: $border;
+
+            @include center;
+            justify-content: flex-start;
+            font-size: 4rem;
+            color: $pc;
+            text-shadow: -2px 0  2px rgba(0,0,0, .2),
+            0 -2px  2px rgba(0,0,0, .2);
+            font-weight: bold;
+            // height: 3rem;
+        }
+
+        & .player {
+            grid-area: player;
+            // border: $border;
+            padding: 5rem 2rem;
+            // margin-top: -5rem;
+            @include bsneu;
+        }
+
+        & .services{
+            // margin-top: -3rem;
+            @include bsneu;
+            grid-area: services;
+            @include center;
+            justify-content: space-around;
+            flex-direction: column;
+            font-size: 4rem;
+            color: $pc;
+            text-shadow: -2px 0  2px rgba(0,0,0, .2),
+            0 -2px  2px rgba(0,0,0, .2);
+            font-weight: bold;
+            // border: $border;
+            padding: 5rem 2rem;
+            // margin-top: -5rem;
+
+            & .service1,
+            .service2,
+            .service3{
+                // border: $border;
+                @include bsneu;
+                @include center;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 2rem 2rem;
+                width: 85%;
+            
+                & h4 {
+                    font-size: 2rem;
+                    font-family: $font2;
+                    font-weight: 700;
+                }
+        
+                & p {
+                    font-size: 1.5rem;
+                    font-family: $font2;
+                    margin-top: 1rem;
+                }
+            }
+
+            & .service1{
+                // border: $border;
+            }
+
+            & .service2{
+                // @include bsneu;
+            }
+
+            & .service3{
+                // @include bsneu;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $phone) {
+    #invitation {
+        height: auto;
+        
+    
+        & .invitation-content {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: .2fr 1fr 1fr;
+            grid-template-areas: 
+            "title"
+            "player"
+            "services"
+            ;
+            padding: 2rem 2rem;
+            
+    
+    
+            & .invitation-title {
+                grid-area: title;
+            }
+    
+            & .player {
+                grid-area: player;
+            }
+    
+            & .services{
+                grid-area: services;
+                justify-content: space-around;
+                padding: 1rem 1rem;
+                
+
+
+            & .service1,
+            .service2,
+            .service3{
+                width: 95%;
+                // height: 80%;
+                margin-bottom: 1rem;
+            
+                & h4 {
+                    font-size: 1.5rem;
+                    font-family: $font2;
+                    font-weight: 700;
+                }
+        
+                & p {
+                    font-size: 1.2rem;
+                    font-family: $font2;
+                    margin-top: 1rem;
+                }
+            }
+            }
+        }
+    }
+}

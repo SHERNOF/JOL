@@ -832,151 +832,6 @@ html {
   }
 }
 
-#services {
-  background: #ecf0f3;
-  height: 35vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: .2fr 1fr;
-      grid-template-rows: .2fr 1fr;
-      grid-template-areas: "title title title" "services1 services2 services3";
-  grid-gap: 2rem;
-  padding: 3rem 10rem;
-}
-
-#services .services-title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: title;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  font-size: 4rem;
-  color: #354a5e;
-  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
-}
-
-#services .service1,
-#services .service2,
-#services .service3 {
-  background: #ecf0f3;
-  border-radius: 10px;
-  -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-          box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 1rem;
-}
-
-#services .service1 h4,
-#services .service2 h4,
-#services .service3 h4 {
-  font-size: 2.8rem;
-  font-family: "Bellota Text", cursive;
-  font-weight: 700;
-}
-
-#services .service1 p,
-#services .service2 p,
-#services .service3 p {
-  font-size: 1.5rem;
-  font-family: "Bellota Text", cursive;
-  margin-top: 1rem;
-}
-
-#services .service2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: services1;
-}
-
-#services .service2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: services2;
-}
-
-#services .service3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: services3;
-}
-
-@media (max-width: 1024px) {
-  #services .service1,
-  #services .service2,
-  #services .service3 {
-    padding: 0 1rem;
-  }
-  #services .service1 h4,
-  #services .service2 h4,
-  #services .service3 h4 {
-    font-size: 2.4rem;
-  }
-  #services .service1 p,
-  #services .service2 p,
-  #services .service3 p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #services {
-    height: 80vh;
-    padding: 2rem 5rem;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: .2fr .4fr .4fr .4fr;
-        grid-template-rows: .2fr .4fr .4fr .4fr;
-        grid-template-areas: "title" "service1"  "service2" "service3";
-  }
-  #services .services-title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: title;
-  }
-  #services .service1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: service1;
-  }
-  #services .service2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: service2;
-  }
-  #services .service3 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: service3;
-  }
-}
-
 #contact {
   height: 60vh;
   display: -ms-grid;
@@ -1302,6 +1157,7 @@ html {
   #contact .contact-title {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: title;
   }
   #contact .contact-left {
@@ -1544,7 +1400,6 @@ footer {
 
 #inv #inv-content .main-content .committee .committee-content .committee-members {
   width: 100%;
-  height: 100%;
   width: 90%;
   height: 80vh;
   margin: auto;
@@ -1732,7 +1587,7 @@ footer {
     width: 100%;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide .card {
-    padding: 1rem;
+    width: 100%;
     border: 1px solid red;
   }
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide .card .profile {
@@ -1744,14 +1599,195 @@ footer {
   #inv #inv-content .main-content .committee .committee-content .committee-members #slide .card p {
     margin-top: -1rem;
   }
-  #inv #inv-content .main-content .committee .committee-content .committee-members .sidebar {
-    width: 40px;
+}
+
+#invitation {
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ecf0f3;
+}
+
+#invitation .invitation-content {
+  height: 95%;
+  border-radius: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: .1fr 1fr;
+      grid-template-rows: .1fr 1fr;
+      grid-template-areas: "title title" "services player";
+  padding: 1rem 10rem;
+  grid-gap: 1rem;
+}
+
+#invitation .invitation-content .invitation-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 4rem;
+  color: #354a5e;
+  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+#invitation .invitation-content .player {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: player;
+  padding: 5rem 2rem;
+  background: #ecf0f3;
+  border-radius: 10px;
+  -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+          box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+#invitation .invitation-content .services {
+  background: #ecf0f3;
+  border-radius: 10px;
+  -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+          box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: services;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 4rem;
+  color: #354a5e;
+  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  padding: 5rem 2rem;
+}
+
+#invitation .invitation-content .services .service1,
+#invitation .invitation-content .services .service2,
+#invitation .invitation-content .services .service3 {
+  background: #ecf0f3;
+  border-radius: 10px;
+  -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+          box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 2rem;
+  width: 85%;
+}
+
+#invitation .invitation-content .services .service1 h4,
+#invitation .invitation-content .services .service2 h4,
+#invitation .invitation-content .services .service3 h4 {
+  font-size: 2rem;
+  font-family: "Bellota Text", cursive;
+  font-weight: 700;
+}
+
+#invitation .invitation-content .services .service1 p,
+#invitation .invitation-content .services .service2 p,
+#invitation .invitation-content .services .service3 p {
+  font-size: 1.5rem;
+  font-family: "Bellota Text", cursive;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 510px) {
+  #invitation {
+    height: auto;
   }
-  #inv #inv-content .main-content .committee .committee-content .committee-members .sidebar i {
-    width: 20px;
-    height: 20px;
-    padding: 2px;
-    font-size: .8rem;
+  #invitation .invitation-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: .2fr 1fr 1fr;
+        grid-template-rows: .2fr 1fr 1fr;
+        grid-template-areas: "title" "player" "services";
+    padding: 2rem 2rem;
+  }
+  #invitation .invitation-content .invitation-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  #invitation .invitation-content .player {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: player;
+  }
+  #invitation .invitation-content .services {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: services;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1rem 1rem;
+  }
+  #invitation .invitation-content .services .service1,
+  #invitation .invitation-content .services .service2,
+  #invitation .invitation-content .services .service3 {
+    width: 95%;
+    margin-bottom: 1rem;
+  }
+  #invitation .invitation-content .services .service1 h4,
+  #invitation .invitation-content .services .service2 h4,
+  #invitation .invitation-content .services .service3 h4 {
+    font-size: 1.5rem;
+    font-family: "Bellota Text", cursive;
+    font-weight: 700;
+  }
+  #invitation .invitation-content .services .service1 p,
+  #invitation .invitation-content .services .service2 p,
+  #invitation .invitation-content .services .service3 p {
+    font-size: 1.2rem;
+    font-family: "Bellota Text", cursive;
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
