@@ -1,6 +1,4 @@
 #contact {
-    // @include bsneu;
-    // border-radius: 0;
     height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,8 +10,8 @@
     padding: 5rem 5rem;
     grid-gap: 1rem 1rem;
     position: relative;
-    // background: linear-gradient(170deg, #7F7FD5, #86A8E7,#91EAE4);
     background: $bg;
+    // padding: 1rem 10rem;
     
 
     & .contact-title {
@@ -25,6 +23,7 @@
         text-shadow: -2px 0  2px rgba(0,0,0, .2),
         0 -2px  2px rgba(0,0,0, .2);
         font-weight: bold;
+        padding: 0 5rem;
         
     }
 
