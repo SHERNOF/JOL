@@ -1159,6 +1159,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: title;
+    padding: 0 2rem;
   }
   #contact .contact-left {
     -ms-grid-row: 2;
@@ -1178,6 +1179,9 @@ html {
 @media (max-width: 510px) {
   #contact {
     padding: 1rem 1rem;
+  }
+  #contact .contact-title {
+    padding: 0 4rem;
   }
   #contact .contact-left .left-content .img-area {
     width: 70%;
