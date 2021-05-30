@@ -1670,6 +1670,9 @@ footer {
     height: 50vh;
     padding: 1rem 2rem;
   }
+  #comt .comt-title {
+    padding: 0 2rem;
+  }
   #comt .comt-content {
     background: #ecf0f3;
     border-radius: 10px;
@@ -1734,18 +1737,18 @@ footer {
     color: #354a5e;
   }
   #comt .comt-content #slide .card .profile img {
-    width: 8rem;
+    width: 4rem;
     border-radius: 50%;
     margin-right: 1.5rem;
   }
   #comt .comt-content #slide .card .profile h5 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   #comt .comt-content #slide .card .profile p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #comt .comt-content #slide .card .pastorMmessage {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
