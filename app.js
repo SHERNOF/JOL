@@ -64,6 +64,21 @@ up.addEventListener('click', () => {
 //     }
 // }
 
+
+
+function postSub(){
+    const submitButton = document.getElementById('#submitButton')
+    const thYou = document.getElementById('thankyou_message')
+    const contactRight = document.getElementById('contact-right')
+
+    console.log('test');
+    contactRight.style.display = 'none'
+    thYou.style.display = 'flex'
+    
+}
+
+
+
 down.onclick = () => {
     if (x < "0"){
         x = x + 300;
@@ -71,6 +86,8 @@ down.onclick = () => {
         console.log('testing')
     }
 }
+
+
 
 
 
