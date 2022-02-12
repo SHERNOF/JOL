@@ -3,8 +3,8 @@ const body = document.getElementById('body')
 
 const more = document.querySelector('.ab-button')
 const aboutDetails = document.getElementById('about-details')
-const showAboutDetails = function (){
-    if(aboutDetails.style.display = 'none'){
+const showAboutDetails = function () {
+    if (aboutDetails.style.display = 'none') {
         aboutDetails.style.display = 'flex'
         console.log('test')
     } else {
@@ -14,8 +14,8 @@ const showAboutDetails = function (){
 
 const back = document.querySelector('.back')
 const btnAboutB = document.getElementById('btn-about-b')
-const backToHome = function (){
-    if(aboutDetails.style.display = 'flex'){
+const backToHome = function () {
+    if (aboutDetails.style.display = 'flex') {
         aboutDetails.style.display = 'none'
     } else {
         aboutDetails.style.display = 'flex'
@@ -24,7 +24,7 @@ const backToHome = function (){
 
 const toggle = document.querySelector('.toggle-button')
 const navBar = document.querySelector('.navbar-links')
-const showNav = function (){
+const showNav = function () {
     navBar.classList.toggle('active')
     navBar.addEventListener('mouseleave', () => {
         navBar.classList.remove('active')
@@ -49,24 +49,16 @@ let x = 0;
 
 up.addEventListener('click', () => {
     // console.log('test')
-    if (x > "-1500"){
+    if (x > "-1500") {
         x = x - 300;
         slide.style.top = x + "px"
         console.log('test')
     }
 })
 
-// up.onclick = () => {
-//     if (x > "-1500"){
-//         x = x - 300;
-//         slide.style.top = x + "px"
-//         console.log('test')
-//     }
-// }
 
 
-
-function postSub(){
+function postSub() {
     const submitButton = document.getElementById('#submitButton')
     const thYou = document.getElementById('thankyou_message')
     const contactRight = document.getElementById('contact-right')
@@ -74,13 +66,12 @@ function postSub(){
     console.log('test');
     contactRight.style.display = 'none'
     thYou.style.display = 'flex'
-    
+
 }
 
 
-
 down.onclick = () => {
-    if (x < "0"){
+    if (x < "0") {
         x = x + 300;
         slide.style.top = x + "px"
         console.log('testing')
