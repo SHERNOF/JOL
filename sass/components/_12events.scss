@@ -1,0 +1,28 @@
+#events {
+  height: 80vh;
+  width: 100%;
+  @include center;
+  border: $border;
+  background: $bg;
+  // padding: 1rem 10rem;
+
+  & .container {
+    height: 95%;
+    & .carousel {
+      height: 90%;
+
+      & .carousel-inner {
+        & .item {
+          & .carImg-container {
+            height: 65rem;
+            // width: 300rem;
+            & img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

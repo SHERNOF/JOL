@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
+.navi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,14 +27,15 @@ html {
   top: 0px;
   width: 100%;
   z-index: 10;
+  max-height: 10rem;
 }
 
-.navbar .brand-title a img {
-  width: 10rem;
-  height: 6rem;
+.navi .brand-title a img {
+  width: 15rem;
+  height: 20rem;
 }
 
-.navbar .toggle-button {
+.navi .toggle-button {
   width: 2.5rem;
   height: 2.5rem;
   right: 9rem;
@@ -52,32 +53,32 @@ html {
   position: absolute;
 }
 
-.navbar .toggle-button:hover {
+.navi .toggle-button:hover {
   cursor: pointer;
 }
 
-.navbar .toggle-button span {
+.navi .toggle-button span {
   width: 100%;
   height: 1px;
   background-color: #354a5e;
 }
 
-.navbar .navbar-links ul {
+.navi .navbar-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navbar .navbar-links ul li {
+.navi .navbar-links ul li {
   list-style: none;
-  padding: .5rem .8rem;
+  padding: 0.5rem 0.8rem;
 }
 
-.navbar .navbar-links ul li:hover {
+.navi .navbar-links ul li:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.navbar .navbar-links ul li a {
+.navi .navbar-links ul li a {
   text-decoration: none;
   font-size: 1rem;
   color: #354a5e;
@@ -151,7 +152,7 @@ html {
 }
 
 .fp {
-  background: linear-gradient(170deg, #7f7fd5, #86a8e7, #91eae4);
+  background: linear-gradient(170deg, #91eae4, #86a8e7, #7f7fd5);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1766,5 +1767,38 @@ footer {
   #comt .comt-content #slide .card .pastorMmessage {
     font-size: .8rem;
   }
+}
+
+#events {
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+  background: #ecf0f3;
+}
+
+#events .container {
+  height: 95%;
+}
+
+#events .container .carousel {
+  height: 90%;
+}
+
+#events .container .carousel .carousel-inner .item .carImg-container {
+  height: 65rem;
+}
+
+#events .container .carousel .carousel-inner .item .carImg-container img {
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
