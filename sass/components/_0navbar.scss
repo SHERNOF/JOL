@@ -8,14 +8,18 @@
   top: 0px;
   width: 100%;
   z-index: 10;
-  //   border: $border;
-  max-height: 10rem;
+  border: $border;
+  height: 10rem;
 
   & .brand-title {
+    width: 16rem;
+    height: 20rem;
+
     & a {
       & img {
-        width: 15rem;
-        height: 20rem;
+        width: 100%;
+        height: 100%;
+        // border: $border;
       }
     }
   }
@@ -68,9 +72,15 @@
 }
 
 @media (max-width: $tablet) {
-  .navbar {
+  .navi {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0 2rem;
+
+    & .brand-title {
+      width: 10rem;
+      height: 12rem;
+    }
 
     & .toggle-button {
       display: flex;
@@ -113,15 +123,14 @@
 }
 
 @media (max-width: $phone) {
-  .navbar {
-    padding: 2rem 4rem;
+  .navi {
+    padding: 0 2rem;
     & .brand-title {
-      & a {
-        & img {
-          width: 6rem;
-          height: 4rem;
-        }
-      }
+      display: flex;
+      justify-content: flex-start;
+      width: 5rem;
+      height: 3rem;
+      top: 20rem;
     }
 
     & .toggle-button {

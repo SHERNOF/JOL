@@ -19,7 +19,7 @@
 
   & .img-container {
     position: absolute;
-    height: 95%;
+    height: 90%;
     width: 97%;
     //   border: $border;
 
@@ -167,8 +167,14 @@
 
 @media (max-width: $tablet) {
   .fp {
+    background: linear-gradient(170deg, #86a8e7, #7f7fd5, #91eae4);
     & .scroll-down {
       margin-bottom: -6%;
+    }
+
+    & .img-container {
+      height: 80%;
+      width: 93%;
     }
 
     & main {
@@ -212,6 +218,7 @@
 
 @media (max-width: $phone) {
   .fp {
+    background: linear-gradient(170deg, #86a8e7, #7f7fd5, #91eae4);
     & .scroll-down {
       display: none;
     }

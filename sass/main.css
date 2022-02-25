@@ -27,12 +27,18 @@ html {
   top: 0px;
   width: 100%;
   z-index: 10;
-  max-height: 10rem;
+  border: 1px solid red;
+  height: 10rem;
+}
+
+.navi .brand-title {
+  width: 16rem;
+  height: 20rem;
 }
 
 .navi .brand-title a img {
-  width: 15rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
 }
 
 .navi .toggle-button {
@@ -86,7 +92,7 @@ html {
 }
 
 @media (max-width: 768px) {
-  .navbar {
+  .navi {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -94,13 +100,18 @@ html {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 0 2rem;
   }
-  .navbar .toggle-button {
+  .navi .brand-title {
+    width: 10rem;
+    height: 12rem;
+  }
+  .navi .toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar .navbar-links {
+  .navi .navbar-links {
     display: none;
     width: 100%;
     margin-top: -2rem;
@@ -108,7 +119,7 @@ html {
     left: 48%;
     top: 85%;
   }
-  .navbar .navbar-links ul {
+  .navi .navbar-links ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -126,10 +137,10 @@ html {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
   }
-  .navbar .navbar-links ul li {
+  .navi .navbar-links ul li {
     text-align: right;
   }
-  .navbar .navbar-links.active {
+  .navi .navbar-links.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -137,14 +148,21 @@ html {
 }
 
 @media (max-width: 510px) {
-  .navbar {
-    padding: 2rem 4rem;
+  .navi {
+    padding: 0 2rem;
   }
-  .navbar .brand-title a img {
-    width: 6rem;
-    height: 4rem;
+  .navi .brand-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 5rem;
+    height: 3rem;
+    top: 20rem;
   }
-  .navbar .toggle-button {
+  .navi .toggle-button {
     width: 1.5rem;
     height: 1.5rem;
     right: 5rem;
@@ -189,7 +207,7 @@ html {
 
 .fp .img-container {
   position: absolute;
-  height: 95%;
+  height: 90%;
   width: 97%;
 }
 
@@ -363,8 +381,15 @@ html {
 }
 
 @media (max-width: 768px) {
+  .fp {
+    background: linear-gradient(170deg, #86a8e7, #7f7fd5, #91eae4);
+  }
   .fp .scroll-down {
     margin-bottom: -6%;
+  }
+  .fp .img-container {
+    height: 80%;
+    width: 93%;
   }
   .fp main .message {
     width: 80%;
@@ -402,6 +427,9 @@ html {
 }
 
 @media (max-width: 510px) {
+  .fp {
+    background: linear-gradient(170deg, #86a8e7, #7f7fd5, #91eae4);
+  }
   .fp .scroll-down {
     display: none;
   }
