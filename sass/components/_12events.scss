@@ -32,3 +32,33 @@
     }
   }
 }
+
+@media (max-width: $tablet) {
+  #events {
+    & .container {
+      & .carousel {
+        & .carousel-inner {
+          & .item {
+            //   height: 80rem;
+            //   width: 100%;
+
+            & .carImg-container {
+              height: 45rem;
+              width: 100%;
+              & img {
+                height: 100%;
+                width: 100%;
+              }
+
+              & video {
+                //   height: 50%;
+                //   width: 100%;
+                //   object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

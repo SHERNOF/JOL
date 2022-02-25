@@ -27,7 +27,6 @@ html {
   top: 0px;
   width: 100%;
   z-index: 10;
-  border: 1px solid red;
   height: 10rem;
 }
 
@@ -1838,5 +1837,16 @@ footer {
 #events .container .carousel .carousel-inner .item .carImg-container img {
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  #events .container .carousel .carousel-inner .item .carImg-container {
+    height: 45rem;
+    width: 100%;
+  }
+  #events .container .carousel .carousel-inner .item .carImg-container img {
+    height: 100%;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
