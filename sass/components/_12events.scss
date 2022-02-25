@@ -2,23 +2,29 @@
   height: 80vh;
   width: 100%;
   @include center;
-  border: $border;
+  //   border: $border;
   background: $bg;
-  // padding: 1rem 10rem;
+  font-family: "Poppins", sans-serif;
 
   & .container {
-    height: 95%;
     & .carousel {
-      height: 90%;
-
       & .carousel-inner {
         & .item {
+          //   height: 80rem;
+          //   width: 100%;
+
           & .carImg-container {
-            height: 65rem;
-            // width: 300rem;
+            height: 60rem;
+            width: 100%;
             & img {
               height: 100%;
               width: 100%;
+            }
+
+            & video {
+              //   height: 50%;
+              //   width: 100%;
+              //   object-fit: cover;
             }
           }
         }
