@@ -162,6 +162,14 @@ html {
     height: 3rem;
     top: 20rem;
   }
+  .navi .brand-title {
+    width: 7rem;
+    height: 14rem;
+  }
+  .navi .brand-title a img {
+    width: 100%;
+    height: 100%;
+  }
   .navi .toggle-button {
     width: 1.5rem;
     height: 1.5rem;
@@ -432,6 +440,15 @@ html {
   }
   .fp .scroll-down {
     display: none;
+  }
+  .fp .img-container {
+    position: absolute;
+    height: 80%;
+    width: 90%;
+  }
+  .fp .img-container .img-wb {
+    width: 100%;
+    height: 100%;
   }
   .fp main {
     margin: 2.5rem 0 0 0;

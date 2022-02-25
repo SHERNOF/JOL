@@ -133,6 +133,19 @@
       top: 20rem;
     }
 
+    & .brand-title {
+      width: 7rem;
+      height: 14rem;
+
+      & a {
+        & img {
+          width: 100%;
+          height: 100%;
+          // border: $border;
+        }
+      }
+    }
+
     & .toggle-button {
       width: 1.5rem;
       height: 1.5rem;
