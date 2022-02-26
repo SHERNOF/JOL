@@ -1,10 +1,25 @@
 #events {
   height: 80vh;
   width: 100%;
-  @include center;
+  // @include center;
   //   border: $border;
+  display: flex;
+  flex-direction: column;
   background: $bg;
   font-family: "Poppins", sans-serif;
+
+  & .events-title {
+    @include center;
+    justify-content: flex-start;
+    font-size: 4rem;
+    color: $pc;
+    text-shadow: -2px 0 2px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    // height: 3rem;
+    // border: $border;
+    padding: 0 10rem;
+    margin-bottom: 2rem;
+  }
 
   & .container {
     & .carousel {

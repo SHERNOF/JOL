@@ -27,7 +27,7 @@ html {
   top: 0px;
   width: 100%;
   z-index: 10;
-  height: 10rem;
+  height: 6rem;
 }
 
 .navi .brand-title {
@@ -214,7 +214,7 @@ html {
 
 .fp .img-container {
   position: absolute;
-  height: 90%;
+  height: 98%;
   width: 97%;
 }
 
@@ -1819,14 +1819,33 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ecf0f3;
+  font-family: "Poppins", sans-serif;
+}
+
+#events .events-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ecf0f3;
-  font-family: "Poppins", sans-serif;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 4rem;
+  color: #354a5e;
+  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  padding: 0 10rem;
+  margin-bottom: 2rem;
 }
 
 #events .container .carousel .carousel-inner .item .carImg-container {
